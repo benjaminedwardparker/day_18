@@ -43,9 +43,9 @@ class TeamsController < ApplicationController
   end
 
   def destroy
-    @taco = Taco.find(params[:id])
-    @taco.destroy
-    redirect_to tacos_path, notice: "TEAM DESTROYED"
+    @team = Team.find(params[:id])
+    @team.destroy
+    redirect_to team_path, notice: "TEAM DESTROYED"
   end
 
 
