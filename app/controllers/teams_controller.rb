@@ -45,7 +45,7 @@ class TeamsController < ApplicationController
   def destroy
     @team = Team.find(params[:id])
     @team.destroy
-    redirect_to team_path, notice: "TEAM DESTROYED"
+    redirect_to teams_path, notice: "TEAM DESTROYED"
   end
 
 
